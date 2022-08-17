@@ -47,7 +47,7 @@
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
-    --mb-3: .3rem;
+    --mb-3: 3rem;
 
     /*========== z index ==========*/
     --z-tooltip: 10;
@@ -75,40 +75,40 @@
 
 
 /*==================== BASE ====================*/
-*{ 
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0 0 var(--header-height) 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
-h1,h2,h3,h4 {
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
@@ -116,40 +116,41 @@ img {
     padding: 2rem 0 4rem;
 }
 
-.section_title {
-    font-size: var(--h1-font-size);
+.section__title {
+font-size: var(--h1-font-size);
+color: var(--title-color);
 }
 
-.section_subtitle {
-    display: block;
-    font-size: var(--small-font-size);
-    margin-bottom: var(--mb-3);
+.section__subtitle {
+display: block;
+font-size: var(--small-font-size);
+margin-bottom: var(--mb-3);
 }
 
-.section_title, 
-.section_subtitle {
-    text-align: center;
+.section__title, 
+.section__subtitle {
+text-align: center;
 }
 
 /*==================== LAYOUT ====================*/
 .container {
-    max-width: 768;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
 }
 
 .grid {
-    display: grid;
-    gap: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .header {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-    background-color: var(--body-color);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
 }
 
 /*==================== NAV ====================*/
@@ -346,9 +347,44 @@ img {
     display: inline-flex;
     align-items: center;
 }
+
 /*==================== ABOUT ====================*/
+.about__img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
 
+.about__description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
 
+.about__info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+.about__info-title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+.about__info-name {
+    font-size: var(--smaller-font-size);
+}
+
+.about__info-title,
+.about__info-name {
+    display: block;
+    text-align: center;
+}
+
+.about__buttons {
+    display: flex;
+    justify-content: center;
+}
 /*==================== SKILLS ====================*/
 
 
