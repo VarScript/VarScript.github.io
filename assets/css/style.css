@@ -970,7 +970,49 @@ text-align: center;
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+@media screen and (max-width: 350px) {
+    .container {
+        margin-left: var(--mb-0-5);
+        margin-right: var(--mb-0-5);
+    }
 
+    .nav__menu {
+        padding: 2rem .25rem 4rem;
+    }
+    .nav__list {
+        column-gap: 0;
+    }
+
+    .home__content {
+        grid-template-columns: .25fr 3fr;
+    }
+    .home__blob {
+        width: 180px;
+    }
+
+    .skills__title {
+        font-size: var(--normal-font-size);
+    }
+
+    .qualification__data {
+        grid-area: .5rem;
+    }
+
+    .services__container {
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+    .services__content {
+        padding-right: 3.5rem;
+    }
+    .services__modal {
+        padding: 0 .5rem;
+    }
+
+    .project__img {
+        width: 200px;
+    }
+}
 
 /* For medium devices */
 
