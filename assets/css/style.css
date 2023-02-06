@@ -522,8 +522,8 @@ text-align: center;
 }
 
 
-.skills__php {
-    width: 60%;
+.skills__java {
+    width: 80%;
 }
 .skills__node {
     width: 80%;
@@ -531,8 +531,8 @@ text-align: center;
 .skills__python {
     width: 10%;
 }
-.skills__java {
-    width: 20%;
+.skills__typescript {
+    width: 60%;
 }
 
 
