@@ -509,21 +509,21 @@ text-align: center;
 }
 
 .skills__html {
-    width: 70%;
+    width: 65%;
 }
 .skills__css {
-    width: 45%;
+    width: 60%;
 }
 .skills__js {
-    width: 40%;
+    width: 50%;
 }
-.skills__react {
-    width: 10%;
+.skills__angular {
+    width: 80%;
 }
 
 
 .skills__java {
-    width: 80%;
+    width: 55%;
 }
 .skills__node {
     width: 80%;
@@ -532,7 +532,7 @@ text-align: center;
     width: 10%;
 }
 .skills__typescript {
-    width: 60%;
+    width: 85%;
 }
 
 
